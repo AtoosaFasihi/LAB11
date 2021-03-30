@@ -1,0 +1,11 @@
+[Unit]
+Description=This is a weather service 
+
+[Service]
+Type=simple
+WorkingDirectory=/home/vagrant/week10 
+ExecStart=/home/vagrant/week10/wttr
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

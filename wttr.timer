@@ -1,0 +1,10 @@
+[Unit]
+Description=Run wttr weekly 
+
+[Timr]
+Unit=wttr.service
+OnCalendar=weekly
+persistent=true
+
+[Install]
+WantedBy=timers.target
